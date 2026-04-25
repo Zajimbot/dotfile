@@ -1,0 +1,115 @@
+/* Переменные цветов (GTK синтаксис для swaync) */
+@define-color bg-main rgba(33, 33, 33, 0.88);
+@define-color bg-hover rgba(50, 52, 64, 0.95);
+@define-color border-light rgba(255, 255, 255, 0.08);
+@define-color border-accent rgba(69, 71, 90, 0.6);
+@define-color critical-color #f38ba8;
+@define-color close-bg rgba(255, 85, 85, 0.7);
+
+* {
+    font-family: "JetBrains Mono", "Noto Sans", sans-serif;
+    font-size: 13px;
+}
+
+/* Центр управления уведомлениями */
+.control-center {
+    background: @bg-main;
+    border-radius: 16px;
+    border: 1px solid @border-accent;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(12px);
+}
+
+/* Панель виджетов (если используется) */
+.widgets {
+    background: @bg-main;
+    border-radius: 16px;
+    margin: 8px;
+    padding: 8px;
+}
+
+/* Отдельное уведомление */
+.notification {
+    background: @bg-main;
+    border-radius: 12px;
+    margin: 8px;
+    padding: 12px;
+    border: 1px solid @border-light;
+    transition: all 0.2s ease;
+}
+
+.notification:hover {
+    background: @bg-hover;
+    transform: translateY(-2px);
+}
+
+/* Критические уведомления */
+.notification-critical {
+    border-left: 4px solid @critical-color;
+}
+
+.notification-critical .notification-title {
+    color: @critical-color;
+}
+
+/* Обычные уведомления */
+.notification-title {
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.notification-body {
+    margin: 4px 0;
+}
+
+.notification-action {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 4px 8px;
+    margin-top: 8px;
+}
+
+.notification-action:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Кнопка закрытия */
+.close-button {
+    background: @close-bg;
+    border-radius: 50%;
+    min-width: 24px;
+    min-height: 24px;
+    margin: -4px -4px 0 0;
+}
+
+.close-button:hover {
+    background: rgba(255, 85, 85, 0.9);
+}
+
+/* Кнопки управления (очистить все, настройки и т.д.) */
+.control-center-clear-all {
+    background: @bg-main;
+    border-radius: 12px;
+    margin: 8px;
+    padding: 8px 12px;
+    border: 1px solid @border-light;
+}
+
+.control-center-clear-all:hover {
+    background: @bg-hover;
+}
+
+/* Полоса прокрутки */
+scrollbar {
+    background: transparent;
+}
+
+scrollbar slider {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    min-width: 6px;
+}
+
+scrollbar slider:hover {
+    background: rgba(255, 255, 255, 0.3);
+}

@@ -1,0 +1,46 @@
+layout {
+
+    shadow {
+    // off
+         on
+         softness 10
+         spread 6
+         offset x=0 y=0
+         draw-behind-window true
+         // color "#a62af2a0"
+         color "#888888"
+         inactive-color "#ffffff90"
+    }
+
+    focus-ring {
+        active-color   "#888888"
+        inactive-color "#121316"
+        urgent-color   "#ffb4ab"
+    }
+
+    border {
+        active-color   "#a6caf2"
+        inactive-color "#121316"
+        urgent-color   "#ffb4ab"
+    }
+
+    
+    
+
+    tab-indicator {
+        active-color   "#a6caf2"
+        inactive-color "#24496b"
+        urgent-color   "#ffb4ab"
+    }
+
+    insert-hint {
+        color "#a6caf280"
+    }
+}
+
+recent-windows {
+    highlight {
+        active-color "#a6caf2"
+        urgent-color "#ffb4ab"
+    }
+}

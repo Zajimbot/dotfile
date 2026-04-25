@@ -1,0 +1,209 @@
+/* --- Color Variables --- */
+@define-color bg-dark rgba(30, 30, 30, 0.95);
+@define-color bg-light rgba(40, 40, 40, 0.8);
+@define-color bg-lighter rgba(40, 40, 40, 0.9);
+@define-color accent      #9b59b6;  /* Фиолетовый */
+@define-color text        #ffffff;
+@define-color text-dim    #888888;
+@define-color border-color rgba(255, 255, 255, 0.1);
+
+/* --- Global Styles --- */
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font", "Fira Code", "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: @bg-dark;
+    color: @text;
+    border-bottom: 2px solid @accent;
+    border-radius: 8px ;
+}
+
+/* Левый модуль с Arch логотипом */
+#custom-arch {
+    font-size: 18px;
+    padding: 0 10px;
+    color: @accent;
+    margin-right: 5px;
+}
+
+/* Рабочие пространства */
+#workspaces {
+    background: @bg-light;
+    margin: 5px 0 5px 5px;
+    padding: 2px 5px;
+    border-radius: 8px;
+}
+
+#workspaces button {
+    padding: 0 8px;
+    margin: 0 2px;
+    color: @text-dim;
+    background: transparent;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+#workspaces button.active {
+    color: @text;
+    background: @accent;
+    min-width: 30px;
+}
+
+#workspaces button:hover {
+    background: alpha(@accent, 0.3);
+    color: @text;
+}
+
+/* Окно (название активного окна) */
+#window {
+    background: @bg-light;
+    padding: 0 15px;
+    margin: 5px 5px;
+    border-radius: 8px;
+    color: @text;
+    font-weight: normal;
+    border-left: 3px solid @accent;
+}
+
+/* Центральный блок с часами */
+#clock {
+    background: @bg-light;
+    padding: 0 20px;
+    margin: 5px 5px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: @text-dim;
+    border: 1px solid @accent;
+}
+
+/* Правый блок */
+#tray {
+    background: @bg-light;
+    padding: 0 8px;
+    margin: 5px 2px 5px 5px;
+    border-radius: 8px;
+}
+
+#network {
+    background: @bg-light;
+    padding: 0 12px;
+    margin: 5px 2px;
+    border-radius: 8px;
+    color: @accent;
+}
+
+#pulseaudio {
+    background: @bg-light;
+    padding: 0 12px;
+    margin: 5px 2px;
+    border-radius: 8px;
+    color: @accent;
+}
+
+#language {
+    background: @bg-light;
+    padding: 0 12px;
+    margin: 5px 2px;
+    border-radius: 8px;
+    color: @accent;
+    min-width: 40px;
+}
+
+#battery {
+    background: @bg-light;
+    padding: 0 12px;
+    margin: 5px 2px;
+    border-radius: 8px;
+    color: @accent;
+}
+
+#custom-power {
+    color: @accent;
+    font-size: 16px;
+    padding: 0 15px;
+    margin: 5px 5px 5px 2px;
+    border-radius: 8px;
+    background: @bg-lighter;
+}
+
+/* Специфические состояния */
+#network.disconnected {
+    color: @text-dim;
+}
+
+#pulseaudio.muted {
+    color: @text-dim;
+}
+
+#battery.critical:not(.charging) {
+    color: @text-dim;
+    animation: blink 1s infinite;
+}
+
+#battery.warning:not(.charging) {
+    color: @text-dim;
+}
+
+#battery.charging {
+    color: @accent;
+}
+
+#custom-power:hover {
+    background: @accent;
+    color: @text;
+}
+
+/* Анимация мигания */
+@keyframes blink {
+    50% {
+        background-color: alpha(@accent, 0.2);
+        color: @text;
+    }
+}
+
+/* Разделители между модулями */
+#network, #pulseaudio, #language, #battery, #tray {
+    border-right: 1px solid @border-color;
+}
+
+#custom-power, #battery:last-child {
+    border-right: none;
+}
+
+/* Меню трея */
+#tray menu {
+    background: @bg-dark;
+    color: @text;
+    border: 1px solid @accent;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+#tray menuitem {
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+#tray menuitem:hover {
+    background: @accent;
+}
+
+#tray menuitem * {
+    color: @text;
+}
+
+/* Выравнивание отступов для консистентности */
+.modules-left, .modules-center, .modules-right {
+    margin: 0 5px;
+}
+
+/* Убираем дублирование фонов */
+#network, #pulseaudio, #language, #battery {
+    background: @bg-light;
+}

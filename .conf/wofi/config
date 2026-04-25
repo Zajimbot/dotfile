@@ -1,0 +1,17 @@
+show=drun
+column=4
+width=1600
+height=800
+location=top
+prompt=Search...
+normal_window=true
+allow_images=true
+image_size=28
+insensitive=true
+allow_markup=true
+no_actions=true
+orientation=vertical
+halign=fill
+content_halign=fill
+term=kitty
+style=~/.config/wofi/style.css

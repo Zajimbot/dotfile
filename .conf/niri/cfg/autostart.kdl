@@ -1,0 +1,10 @@
+// ────────────── Startup Applications ──────────────
+// https://github.com/YaLTeR/niri/wiki/Configuration:-Miscellaneous#spawn-sh-at-startup
+    spawn-at-startup "wl-paste" "--watch" "cliphist" "store"
+    spawn-sh-at-startup "/usr/lib/polkit-kde-authentication-agent-1 &" // Polkit
+    // spawn-sh-at-startup "qs -c noctalia-shell"
+    spawn-sh-at-startup "xhost +SI:localuser:root"
+    spawn-sh-at-startup "waybar"
+    spawn-at-startup "awww-daemon"
+    spawn-sh-at-startup "~/.config/niri/Script/clipbordWofi.sh --monitor" 
+    spawn-at-startup "swaync"

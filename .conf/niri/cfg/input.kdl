@@ -1,0 +1,28 @@
+
+input {
+    keyboard {
+        xkb {
+            layout "us,ru"
+            options "grp:win_space_toggle"
+        }
+        numlock // Enable numlock on startup
+    }
+
+    mouse {
+
+    }
+
+    touchpad {
+        dwt
+        tap 
+        natural-scroll 
+
+    }
+    focus-follows-mouse max-scroll-amount="10%"
+    workspace-auto-back-and-forth 
+}
+
+cursor {
+    xcursor-theme "Moga-Cursor" 
+    xcursor-size 12
+}

@@ -1,0 +1,118 @@
+{
+  "layer": "top",
+  "position": "top",
+  "margin-left": 450,
+  "margin-right": 450,
+  "margin-top": 0,
+  "margin-bottom": 1.4,
+  "modules-left": [
+    "custom/arch",
+    "niri/workspaces",
+    "window" 
+  ],
+
+  "modules-center": [
+    "clock"
+  ],
+
+  "modules-right": [
+    "tray",
+    "battery",
+    "niri/language",
+    "network",
+    "pulseaudio",
+    "custom/power"
+  ],
+
+  // Новый модуль для Arch логотипа
+  "custom/arch": {
+    "format": " ",
+    "tooltip": false,
+    "interval": "once"
+  },
+
+  "niri/workspaces": {
+    "active-only": false,
+    "all-outputs": true,
+    "on-click": "activate",
+    "format": "{icon}",
+    "persistent-workspaces": {
+      "*": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    },
+    "format-icons": {
+"1": "一",
+"2": "二",
+"3": "三",
+"4": "四",
+"5": "五",
+"6": "六",
+"7": "七",
+"8": "八",
+"9": "九",
+"10": "十"
+    }
+  },
+
+  // Модуль для отображения текущего приложения
+  "window": {
+    "format": "{}",
+    "max-length": 50
+  
+  },
+
+  "clock": {
+    "timezone": "Europe/Moscow",  // Исправлено с "Russia/Mosrow"
+    "tooltip": false,
+    "format": "{:%Y-%m-%d %H:%M:%S}",
+    "interval": 1
+  },
+
+  "network": {
+    "format-wifi": "󰤢",
+    "format-ethernet": "󰈀  {ifname}",
+    "format-disconnected": "󰤠 ",
+    "interval": 5,
+    "tooltip": false,
+    "on-click": "nmtui"
+  },
+
+  "niri/language": {
+    "format": "{}",
+    "format-en": "EN",
+    "format-ru": "Ru"
+  },
+
+  "pulseaudio": {
+    "format": "{icon}  {volume}%",
+    "format-muted": " ",
+    "format-icons": {
+      "default": ["", "", " "]
+    }
+  },
+
+  // Новый модуль для батареи
+  "battery": {
+    "bat": "BAT1",
+    "adapter": "ACAD",
+    "format": "{icon} {capacity}%",
+    "format-charging": " {capacity}%",
+    "format-icons": ["", "", "", "", ""],
+    "tooltip": true,
+    "interval": 5,
+    "states": {
+      "warning": 25,
+      "critical": 10
+    }
+  },
+
+  "custom/power": {
+    "format": " ",
+    "on-click": "bash ~/.config/waybar/Script/logout.sh",
+    "tooltip": false
+  },
+
+  "tray": {
+    "icon-size": 21,
+    "spacing": 10
+  }
+}

@@ -1,0 +1,66 @@
+
+[colors.primary]
+background = '#1a1a1a'  # bg-dark
+foreground = '#ffffff'  # text
+
+[colors.cursor]
+text = '#ffffff'        # text
+cursor = '#888888'      # accent
+
+[colors.vi_mode_cursor]
+text = '#1e1e1e'        # bg-dark
+cursor = '#888888'      # accent
+
+[colors.search.matches]
+foreground = '#888888'  # text-dim
+background = '#888888'  # accent с меньшей прозрачностью
+
+[colors.search.focused_match]
+foreground = '#1e1e1e'  # bg-dark
+background = '#888888'  # accent
+
+[colors.footer_bar]
+foreground = '#888888'  # text-dim
+background = '#282828'  # bg-light
+
+[colors.hints.start]
+foreground = '#888888'  # text-dim
+background = '#282828'  # bg-light
+
+[colors.hints.end]
+foreground = '#888888'  # text-dim
+background = '#282828'  # bg-light
+
+[colors.selection]
+text = '#1e1e1e'        # bg-dark
+background = '#888888'  # accent
+
+[colors.normal]
+black = '#1e1e1e'       # bg-dark
+red = '#e06c75'         # мягкий красный
+green = '#98c379'       # мягкий зеленый
+yellow = '#e5c07b'      # мягкий желтый
+blue = '#61afef'        # мягкий синий
+magenta = '#9b59b6'     # accent фиолетовый
+cyan = '#56b6c2'        # мягкий циан
+white = '#ffffff'       # text
+
+[colors.bright]
+black = '#282828'       # bg-light
+red = '#be5046'         # темнее красный
+green = '#7caf5c'       # темнее зеленый
+yellow = '#d19a66'      # темнее желтый
+blue = '#3e7db3'        # темнее синий
+magenta = '#b07cc9'     # светлее фиолетовый
+cyan = '#3a8b97'        # темнее циан
+white = '#888888'       # text-dim
+
+[colors.dim]
+black = '#1e1e1e'       # bg-dark
+red = '#e06c75'         # как normal
+green = '#98c379'       # как normal
+yellow = '#e5c07b'      # как normal
+blue = '#61afef'        # как normal
+magenta = '#9b59b6'     # как normal
+cyan = '#56b6c2'        # как normal
+white = '#ffffff'       # как normal
