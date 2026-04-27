@@ -11,14 +11,14 @@
       "right": 3
     },
     "color": {
-      "1": "blue",
+      "1": "green",
       "2": "cyan"
     }
   },
   "display": {
     "separator": " ",
     "color": {
-      "keys": "blue"
+      "keys": "green"
     },
     "constants": [
       "────────────────────────────"
@@ -28,13 +28,13 @@
     {
       "type": "title",
       "key": "┌ User",
-      "keyColor": "blue",
+      "keyColor": "green",
       "format": "{user-name}@{host-name}"
     },
     {
       "type": "custom",
       "format": "└{$1}┘",
-      "outputColor": "blue"
+      "outputColor": "green"
     },
 
     {

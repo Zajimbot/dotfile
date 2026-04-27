@@ -8,12 +8,12 @@ layout {
          offset x=0 y=0
          draw-behind-window true
          // color "#a62af2a0"
-         color "#888888"
-         inactive-color "#ffffff90"
+         color "#286f28"
+         // inactive-color "#ffffff90"
     }
 
     focus-ring {
-        active-color   "#888888"
+        active-color   "#286f28"
         inactive-color "#121316"
         urgent-color   "#ffb4ab"
     }

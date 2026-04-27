@@ -1,13 +1,13 @@
 /* --- Color Variables --- */
-@define-color bg-dark rgba(30, 30, 30, 0.95);
-@define-color bg-light rgba(40, 40, 40, 0.8);
-@define-color bg-lighter rgba(40, 40, 40, 0.9);
+@define-color bg-dark rgba(30, 40, 30, 0.95);
+@define-color bg-light rgba(40, 50, 40, 0.8);
+@define-color bg-lighter rgba(40, 50, 40, 0.9);
 /* @define-color accent      #9b59b6; */
 /* Фиолетовый */
-@define-color accent      #888888;  /* Фиолетовый */
+@define-color accent      #286f28;
 @define-color text        #ffffff;
-@define-color text-dim    #888888;
-@define-color border-color rgba(255, 255, 255, 0.1);
+@define-color text-dim    #286f28;
+@define-color border-color rgba(235, 255, 235, 0.1);
 
 /* --- Global Styles --- */
 * {

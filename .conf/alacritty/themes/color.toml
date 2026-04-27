@@ -1,11 +1,11 @@
 
 [colors.primary]
-background = '#1a1a1a'  # bg-dark
+background = '#102f10'  # bg-dark
 foreground = '#ffffff'  # text
 
 [colors.cursor]
 text = '#ffffff'        # text
-cursor = '#888888'      # accent
+cursor = '#999999'      # accent
 
 [colors.vi_mode_cursor]
 text = '#1e1e1e'        # bg-dark
@@ -56,7 +56,7 @@ cyan = '#3a8b97'        # темнее циан
 white = '#888888'       # text-dim
 
 [colors.dim]
-black = '#1e1e1e'       # bg-dark
+black = '#999999'       # bg-dark
 red = '#e06c75'         # как normal
 green = '#98c379'       # как normal
 yellow = '#e5c07b'      # как normal

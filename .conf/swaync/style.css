@@ -1,8 +1,8 @@
 /* Переменные цветов (GTK синтаксис для swaync) */
-@define-color bg-main rgba(33, 33, 33, 0.88);
-@define-color bg-hover rgba(50, 52, 64, 0.95);
+@define-color bg-main rgba(33, 53, 33, 0.88);
+@define-color bg-hover rgba(40, 52, 44, 0.95);
 @define-color border-light rgba(255, 255, 255, 0.08);
-@define-color border-accent rgba(69, 71, 90, 0.6);
+@define-color border-accent rgba(39, 71, 40, 0.6);
 @define-color critical-color #f38ba8;
 @define-color close-bg rgba(255, 85, 85, 0.7);
 

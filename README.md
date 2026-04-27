@@ -1,9 +1,9 @@
-# мои дотфайлы для niri 
+# мои дотфайлы для niri + waybar
 
 
 Внешний вид    
 
-![Внешний вид](images/image_2026-04-25_19-22-58.png)
+![Внешний вид](images/image_2026-04-27_14-18-51.png)
 
 Для автоматической смены обоев их надо поместить по пути `"$HOME/Pictures/Wallpaper"`    
 
@@ -26,13 +26,20 @@ wofi
 wl-clip-persist
 wl-clipboard
 zoxide
+noto-fonts-cjk     
+noto-fonts-emoji   
 pokemon-colorscripts
 ```
 
 wofi  
 
-![wofi](images/image_2026-04-25_19-44-29.png)
+![wofi](images/image_2026-04-27_14-18-39.png)
 
-Фетч и бтоп  
+swaync
 
-![Другое](images/image_2026-04-25_19-42-27.png)
+
+![swaync](images/image_2026-04-27_14-26-41.png)
+
+Фетч  
+
+![Другое](images/image_2026-04-27_14-17-53.png)
