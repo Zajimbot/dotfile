@@ -43,3 +43,7 @@ swaync
 Фетч  
 
 ![Другое](images/image_2026-04-27_14-17-53.png)
+
+Видио 
+
+![Другое](images/recording.gif)
