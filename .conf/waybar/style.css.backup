@@ -1,10 +1,12 @@
-@define-color bg-dark  rgba(31, 32, 25, 0.99);
-@define-color bg-light rgb(27, 28, 21);
-@define-color bg-lighter rgb(31, 32, 25);
-@define-color accent #bece7f;
-@define-color text #2a3400;
-@define-color text-dim #e4e3d7;
+/* --- Color Variables --- */
+@define-color bg-dark rgba(30, 30, 30, 0.95);
+@define-color bg-light rgba(40, 40, 40, 0.8);
+@define-color bg-lighter rgba(40, 40, 40, 0.9);
+@define-color accent      #9b59b6;  /* Фиолетовый */
+@define-color text        #ffffff;
+@define-color text-dim    #888888;
 @define-color border-color rgba(255, 255, 255, 0.1);
+
 /* --- Global Styles --- */
 * {
     border: none;
@@ -13,50 +15,44 @@
     font-weight: bold;
     font-size: 14px;
     min-height: 0;
-    margin-bottom: 2px;
 }
 
 window#waybar {
     background: @bg-dark;
-    color: @text-dim;
+    color: @text;
     border-bottom: 2px solid @accent;
-    border-radius: 0 0 14px 14px;
+    border-radius: 8px ;
 }
 
 /* Левый модуль с Arch логотипом */
 #custom-arch {
     font-size: 18px;
+    padding: 0 10px;
     color: @accent;
-    color: @text-dim;
-    background: @bg-light;
-    margin: 5px 0 5px 5px;
-    padding: 5px 10px 5px 15px;
-    border-radius: 8px;
+    margin-right: 5px;
 }
 
 /* Рабочие пространства */
 #workspaces {
     background: @bg-light;
     margin: 5px 0 5px 5px;
-    padding: 2px 2px;
+    padding: 2px 5px;
     border-radius: 8px;
-    border: 1px solid @accent;
 }
 
 #workspaces button {
-    padding: 0 2px;
-    margin: 0px;
+    padding: 0 8px;
+    margin: 0 2px;
     color: @text-dim;
     background: transparent;
     border-radius: 6px;
     transition: all 0.3s ease;
-    min-width: 40px;
 }
 
 #workspaces button.active {
     color: @text;
     background: @accent;
-    min-width: 40px;
+    min-width: 30px;
 }
 
 #workspaces button:hover {
@@ -72,6 +68,7 @@ window#waybar {
     border-radius: 8px;
     color: @text;
     font-weight: normal;
+    border-left: 3px solid @accent;
 }
 
 /* Центральный блок с часами */
@@ -95,10 +92,10 @@ window#waybar {
 
 #network {
     background: @bg-light;
-    padding: 0 18 0 12;
+    padding: 0 12px;
     margin: 5px 2px;
     border-radius: 8px;
-    color: @text-dim;
+    color: @accent;
 }
 
 #pulseaudio {
@@ -106,7 +103,7 @@ window#waybar {
     padding: 0 12px;
     margin: 5px 2px;
     border-radius: 8px;
-    color: @text-dim;
+    color: @accent;
 }
 
 #language {
@@ -114,8 +111,8 @@ window#waybar {
     padding: 0 12px;
     margin: 5px 2px;
     border-radius: 8px;
+    color: @accent;
     min-width: 40px;
-    color: @text-dim;
 }
 
 #battery {
@@ -123,17 +120,16 @@ window#waybar {
     padding: 0 12px;
     margin: 5px 2px;
     border-radius: 8px;
-    color: @text-dim;
+    color: @accent;
 }
 
 #custom-power {
+    color: @accent;
     font-size: 16px;
-    /* padding: 0 8px; */
-    padding: 5px 10px 5px 15px;
+    padding: 0 15px;
     margin: 5px 5px 5px 2px;
     border-radius: 8px;
     background: @bg-lighter;
-    color: @text-dim;
 }
 
 /* Специфические состояния */
@@ -155,7 +151,7 @@ window#waybar {
 }
 
 #battery.charging {
-    color: @text-dim;
+    color: @accent;
 }
 
 #custom-power:hover {
@@ -172,15 +168,18 @@ window#waybar {
 }
 
 /* Разделители между модулями */
-#network, #custom-arch, #pulseaudio, #language, #battery, #tray, #custom-power, #battery {
-    border: 1px solid @accent;
+#network, #pulseaudio, #language, #battery, #tray {
+    border-right: 1px solid @border-color;
 }
 
+#custom-power, #battery:last-child {
+    border-right: none;
+}
 
 /* Меню трея */
 #tray menu {
     background: @bg-dark;
-    color: @text-dim;
+    color: @text;
     border: 1px solid @accent;
     border-radius: 8px;
     padding: 5px;
@@ -196,7 +195,7 @@ window#waybar {
 }
 
 #tray menuitem * {
-    color: @text-dim;
+    color: @text;
 }
 
 /* Выравнивание отступов для консистентности */

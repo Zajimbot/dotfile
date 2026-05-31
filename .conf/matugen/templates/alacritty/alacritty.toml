@@ -2,76 +2,76 @@
 
   # Выделение
   [colors.selection]
-    text = "#13140d"
-    background = "#bece7f"
+    text = "{{ colors.surface.default.hex }}"
+    background = "{{ colors.primary.default.hex }}"
 
   # Основная палитра
   [colors.primary]
-    background = "#13140d"
-    foreground = "#e4e3d7"
+    background = "{{ colors.surface.default.hex }}"
+    foreground = "{{ colors.on_surface.default.hex }}"
 
   [colors.normal]
-    black   = "#13140d"
+    black   = "{{ colors.surface.default.hex }}"
     red     = "#f38ba8"
     green   = "#a6e3a1"
     yellow  = "#f9e2af"
     blue    = "#89b4fa"
     magenta = "#9b59b6"
     cyan    = "#94e2d5"
-    white   = "#e4e3d7"
+    white   = "{{ colors.on_surface.default.hex }}"
 
   [colors.bright]
-    black   = "#1f2019"
+    black   = "{{ colors.surface_container.default.hex }}"
     red     = "#f38ba8"
     green   = "#a6e3a1"
     yellow  = "#f9e2af"
     blue    = "#89b4fa"
     magenta = "#9b59b6"
     cyan    = "#94e2d5"
-    white   = "#e4e3d7"
+    white   = "{{ colors.on_surface.default.hex }}"
 
   [colors.dim]
-    black   = "#0e0f08"
+    black   = "{{ colors.surface_container_lowest.default.hex }}"
     red     = "#f38ba8"
     green   = "#a6e3a1"
     yellow  = "#f9e2af"
     blue    = "#89b4fa"
     magenta = "#9b59b6"
     cyan    = "#94e2d5"
-    white   = "#e4e3d7"
+    white   = "{{ colors.on_surface.default.hex }}"
 
   # # Indexed colors (для 256 цветов)
   # [colors.indexed]
-  #   text = "#e4e3d7"
-  #   background = "#bece7f"
+  #   text = "{{ colors.on_surface.default.hex }}"
+  #   background = "{{ colors.primary.default.hex }}"
   #
   # # ANSI цвета (для совместимости)
   # [colors.ansi]
-  #   black   = "#13140d"
+  #   black   = "{{ colors.surface.default.hex }}"
   #   red     = "#f38ba8"
   #   green   = "#a6e3a1"
   #   yellow  = "#f9e2af"
   #   blue    = "#89b4fa"
-  #   magenta = "#bece7f"
+  #   magenta = "{{ colors.primary.default.hex }}"
   #   cyan    = "#94e2d5"
-  #   white   = "#e4e3d7"
+  #   white   = "{{ colors.on_surface.default.hex }}"
   #
   # [colors.ansi_bright]
-  #   black   = "#1f2019"
+  #   black   = "{{ colors.surface_container.default.hex }}"
   #   red     = "#f38ba8"
   #   green   = "#a6e3a1"
   #   yellow  = "#f9e2af"
   #   blue    = "#89b4fa"
-  #   magenta = "#bece7f"
+  #   magenta = "{{ colors.primary.default.hex }}"
   #   cyan    = "#94e2d5"
-  #   white   = "#e4e3d788"
+  #   white   = "{{ colors.on_surface.default.hex }}88"
   #
   # [colors.ansi_dim]
-  #   black   = "#0e0f08"
+  #   black   = "{{ colors.surface_container_lowest.default.hex }}"
   #   red     = "#f38ba8"
   #   green   = "#a6e3a1"
   #   yellow  = "#f9e2af"
   #   blue    = "#89b4fa"
-  #   magenta = "#bece7f"
+  #   magenta = "{{ colors.primary.default.hex }}"
   #   cyan    = "#94e2d5"
-  #   white   = "#e4e3d788"
+  #   white   = "{{ colors.on_surface.default.hex }}88"

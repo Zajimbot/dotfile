@@ -3,8 +3,10 @@
         center-focused-column "on-overflow" // Don’t auto-center focused column
 
         background-color "transparent" 
-        empty-workspace-above-first;
+        empty-workspace-above-first
+        always-center-single-column
 
+        
         preset-column-widths {
            proportion 0.5
            proportion 0.85

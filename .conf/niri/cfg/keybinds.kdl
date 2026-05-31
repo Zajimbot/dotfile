@@ -19,7 +19,8 @@ binds {
     Mod+B                               hotkey-overlay-title="Open Browser: firefox" { spawn "zen-browser"; }
 
 
-    Mod+Y {spawn "sh" "-c" "~/.config/niri/Script/awwwWalpaper.sh";}
+    Mod+Y {spawn "sh" "-c" "~/.config/niri/Script/swwwWalpaper.sh";}
+    Mod+U {spawn "sh" "-c" "~/.config/niri/Script/swwwWalpaperLight.sh";}
 
     Mod+V { spawn "sh" "-c" "~/.config/niri/Script/clipbordWofi.sh --show"; }
     
@@ -136,6 +137,9 @@ binds {
     Mod+Shift+1                        { screenshot; }
     Mod+Shift+2                        { spawn "sh" "-c" "bash ~/.config/niri/Script/osr.sh"; }
 
+
+    // ─── Emergency Escape Key ───
+    Mod+ESCAPE                          allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
 
     // ─── Exit / Power ───
     Mod+P { spawn "sh" "-c" "powerprofilesctl set power-saver && notify-send 'Power Mode' 'Power Saver'"; }

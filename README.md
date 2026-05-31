@@ -29,6 +29,7 @@ zoxide
 noto-fonts-cjk     
 noto-fonts-emoji   
 pokemon-colorscripts
+matugen
 ```
 
 wofi  

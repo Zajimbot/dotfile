@@ -1,9 +1,9 @@
-@define-color bg-dark  rgba(31, 32, 25, 0.99);
-@define-color bg-light rgb(27, 28, 21);
-@define-color bg-lighter rgb(31, 32, 25);
-@define-color accent #bece7f;
-@define-color text #2a3400;
-@define-color text-dim #e4e3d7;
+@define-color bg-dark  {{ colors.surface_container.default.rgba | set_alpha: 0.99 }};
+@define-color bg-light {{ colors.surface_container_low.default.rgb}};
+@define-color bg-lighter {{ colors.surface_container.default.rgb}};
+@define-color accent {{ colors.primary.default.hex }};
+@define-color text {{ colors.on_primary.default.hex }};
+@define-color text-dim {{ colors.on_surface.default.hex }};
 @define-color border-color rgba(255, 255, 255, 0.1);
 /* --- Global Styles --- */
 * {

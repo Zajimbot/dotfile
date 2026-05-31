@@ -1,8 +1,8 @@
 {
   "layer": "top",
   "position": "top",
-  "margin-left": 450,
-  "margin-right": 450,
+  "margin-left": 500,
+  "margin-right": 500,
   "margin-top": 0,
   "margin-bottom": 1.4,
   "modules-left": [
@@ -61,7 +61,7 @@
   },
 
   "clock": {
-    "timezone": "Europe/Moscow",  // Исправлено с "Russia/Mosrow"
+    "timezone": "Europe/Moscow",
     "tooltip": false,
     "format": "{:%Y-%m-%d %H:%M:%S}",
     "interval": 1

@@ -1,0 +1,26 @@
+layout {
+    shadow {
+        on
+        softness 10
+        spread 6
+        offset x=0 y=0
+        draw-behind-window true
+        color "{{ colors.shadow.default.hex }}a0"
+        inactive-color "{{ colors.primary.default.hex }}50"
+    }
+    focus-ring {
+        active-gradient from="{{ colors.primary.default.hex }}" to="{{ colors.on_primary.default.hex }}" angle=135 relative-to="workspace-view"
+        inactive-gradient from="{{ colors.primary.default.hex }}" to="{{ colors.on_primary.default.hex }}" angle=135 relative-to="workspace-view"
+    }
+    border {
+        active-gradient from="{{ colors.primary.default.hex }}" to="{{ colors.on_primary.default.hex }}30" angle=135 relative-to="workspace-view"
+        inactive-gradient from="{{ colors.primary.default.hex }}" to="{{ colors.on_primary.default.hex }}30" angle=135 relative-to="workspace-view"
+    }
+    tab-indicator {
+        active-color "{{ colors.primary.default.hex }}"
+        inactive-color "{{ colors.primary.default.hex }}80"
+    }
+    insert-hint {
+        color "{{ colors.primary.default.hex }}80"
+    }
+}

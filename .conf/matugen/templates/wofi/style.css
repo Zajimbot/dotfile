@@ -1,9 +1,9 @@
-@define-color bg-window #13140d;
-@define-color bg-input #3f4c0a;
-@define-color text-default #e4e3d7;
-@define-color text-input #e4e3d7;
-@define-color bg-selected #bece7f;
-@define-color text-selected #2a3400;
+@define-color bg-window {{ colors.surface.default.hex }};
+@define-color bg-input {{ colors.primary_container.default.hex }};
+@define-color text-default {{ colors.on_surface.default.hex }};
+@define-color text-input {{ colors.on_surface.default.hex }};
+@define-color bg-selected {{ colors.primary.default.hex }};
+@define-color text-selected {{ colors.on_primary.default.hex }};
 
 window {
   background-color: @bg-window;
