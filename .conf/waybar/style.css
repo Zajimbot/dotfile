@@ -1,9 +1,9 @@
-@define-color bg-dark  rgba(31, 32, 25, 0.99);
-@define-color bg-light rgb(27, 28, 21);
-@define-color bg-lighter rgb(31, 32, 25);
-@define-color accent #bece7f;
-@define-color text #2a3400;
-@define-color text-dim #e4e3d7;
+@define-color bg-dark  rgba(29, 32, 36, 0.99);
+@define-color bg-light rgb(25, 28, 32);
+@define-color bg-lighter rgb(29, 32, 36);
+@define-color accent #a4c9fe;
+@define-color text #00315d;
+@define-color text-dim #e1e2e9;
 @define-color border-color rgba(255, 255, 255, 0.1);
 /* --- Global Styles --- */
 * {

@@ -68,8 +68,8 @@
       "keyColor": "blue"
     },
     {
-      "type": "locale",
-      "key": "│  Locale",
+      "type": "packages",
+      "key": "│ 󰏗 Packages",
       "keyColor": "blue"
     },
     {
@@ -137,11 +137,6 @@
     {
       "type": "memory",
       "key": "│ 󰑭 Memory",
-      "keyColor": "green"
-    },
-    {
-      "type": "swap",
-      "key": "│  Swap",
       "keyColor": "green"
     },
     {

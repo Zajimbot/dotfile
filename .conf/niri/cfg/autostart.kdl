@@ -9,3 +9,4 @@
     spawn-sh-at-startup "~/.config/niri/Script/clipbordWofi.sh --monitor" 
     // spawn-at-startup "swaync"
     spawn-at-startup "sh" "-c" "CUDA_VISIBLE_DEVICES= DRI_PRIME=0 swaync"
+    // spawn-at-startup "rudo"

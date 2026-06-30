@@ -5,11 +5,18 @@
     }
 
 prefer-no-csd true
-    layer-rule {
-        match namespace="^noctalia-wallpaper*"
-        place-within-backdrop true
-    }
 
+    layer-rule {
+        // match namespace="waybar"
+        // match at-startup=true
+        //
+        match layer="top"
+        match namespace="^awww-daemon$"
+        place-within-backdrop true
+        background-effect {
+          blur true
+        }
+    }
 
     window-rule {
         match app-id="Happ"
@@ -22,7 +29,7 @@ prefer-no-csd true
         match app-id="Thunar"
         default-column-width { 
            proportion 0.50;
- };
+        };
 
     }
 

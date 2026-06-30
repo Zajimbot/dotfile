@@ -21,3 +21,6 @@ output_path = "~/.config/wofi/style.css"
 input_path = "templates/swaync/style.css"
 output_path = "~/.config/swaync/style.css"
 
+[templates.rofi]
+input_path = "templates/rofi/config.rasi"
+output_path = "~/.config/rofi/config.rasi"

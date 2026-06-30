@@ -16,8 +16,11 @@ binds {
     }
 
 
+
+
     Mod+B                               hotkey-overlay-title="Open Browser: firefox" { spawn "zen-browser"; }
 
+    Mod+I {spawn "sh" "-c" "bash ~/.config/niri/Script/RofiWalpaperSelector.sh";}
 
     Mod+Y {spawn "sh" "-c" "~/.config/niri/Script/swwwWalpaper.sh";}
     Mod+U {spawn "sh" "-c" "~/.config/niri/Script/swwwWalpaperLight.sh";}
@@ -144,6 +147,7 @@ binds {
     // ─── Exit / Power ───
     Mod+P { spawn "sh" "-c" "powerprofilesctl set power-saver && notify-send 'Power Mode' 'Power Saver'"; }
     Mod+O { spawn "sh" "-c" "powerprofilesctl set balanced && notify-send 'Power Mode' 'Balanced'"; }
+    Mod+Shift+O { spawn "sh" "-c" "powerprofilesctl set performance && notify-send 'Power Mode' 'Performance'"; }
     CTRL+ALT+Delete                     { quit; }
     Mod+Shift+P                         { power-off-monitors; } // Turn off screens (useful for OLED or privacy)
     Mod+TAB                              repeat=false { toggle-overview; }
@@ -151,15 +155,15 @@ binds {
 
 gestures {
   dnd-edge-view-scroll {
-        trigger-width 2000
-        delay-ms 100
-        max-speed 1500
+        trigger-width 0
+        delay-ms 0
+        max-speed 0
     }
 
     dnd-edge-workspace-switch {
-        trigger-height 2000
-        delay-ms 100
-        max-speed 1500
+        trigger-height 0
+        delay-ms 0
+        max-speed 0
     }
 
     hot-corners {

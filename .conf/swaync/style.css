@@ -1,8 +1,8 @@
-@define-color bg-main rgb(19, 20, 13);
-@define-color bg-hover rgb(19, 20, 13);
+@define-color bg-main rgb(17, 19, 24);
+@define-color bg-hover rgb(17, 19, 24);
 @define-color border-light rgba(255, 255, 255, 0.08);
-@define-color border-accent rgb(19, 20, 13);
-@define-color accent #bece7f;
+@define-color border-accent rgb(17, 19, 24);
+@define-color accent #a4c9fe;
 * {
     font-family: "JetBrains Mono", "Noto Sans", sans-serif;
     font-size: 13px;

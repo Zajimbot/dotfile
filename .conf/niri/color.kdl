@@ -6,21 +6,21 @@ layout {
         offset x=0 y=0
         draw-behind-window true
         color "#000000a0"
-        inactive-color "#bece7f50"
+        inactive-color "#a4c9fe50"
     }
     focus-ring {
-        active-gradient from="#bece7f" to="#2a3400" angle=135 relative-to="workspace-view"
-        inactive-gradient from="#bece7f" to="#2a3400" angle=135 relative-to="workspace-view"
+        active-gradient from="#a4c9fe" to="#00315d" angle=135 relative-to="workspace-view"
+        inactive-gradient from="#a4c9fe" to="#00315d" angle=135 relative-to="workspace-view"
     }
     border {
-        active-gradient from="#bece7f" to="#2a340030" angle=135 relative-to="workspace-view"
-        inactive-gradient from="#bece7f" to="#2a340030" angle=135 relative-to="workspace-view"
+        active-gradient from="#a4c9fe" to="#00315d30" angle=135 relative-to="workspace-view"
+        inactive-gradient from="#a4c9fe" to="#00315d30" angle=135 relative-to="workspace-view"
     }
     tab-indicator {
-        active-color "#bece7f"
-        inactive-color "#bece7f80"
+        active-color "#a4c9fe"
+        inactive-color "#a4c9fe80"
     }
     insert-hint {
-        color "#bece7f80"
+        color "#a4c9fe80"
     }
 }

@@ -2,76 +2,76 @@
 
   # Выделение
   [colors.selection]
-    text = "#13140d"
-    background = "#bece7f"
+    text = "#111318"
+    background = "#a4c9fe"
 
   # Основная палитра
   [colors.primary]
-    background = "#13140d"
-    foreground = "#e4e3d7"
+    background = "#111318"
+    foreground = "#e1e2e9"
 
   [colors.normal]
-    black   = "#13140d"
+    black   = "#111318"
     red     = "#f38ba8"
     green   = "#a6e3a1"
     yellow  = "#f9e2af"
     blue    = "#89b4fa"
     magenta = "#9b59b6"
     cyan    = "#94e2d5"
-    white   = "#e4e3d7"
+    white   = "#e1e2e9"
 
   [colors.bright]
-    black   = "#1f2019"
+    black   = "#1d2024"
     red     = "#f38ba8"
     green   = "#a6e3a1"
     yellow  = "#f9e2af"
     blue    = "#89b4fa"
     magenta = "#9b59b6"
     cyan    = "#94e2d5"
-    white   = "#e4e3d7"
+    white   = "#e1e2e9"
 
   [colors.dim]
-    black   = "#0e0f08"
+    black   = "#0c0e13"
     red     = "#f38ba8"
     green   = "#a6e3a1"
     yellow  = "#f9e2af"
     blue    = "#89b4fa"
     magenta = "#9b59b6"
     cyan    = "#94e2d5"
-    white   = "#e4e3d7"
+    white   = "#e1e2e9"
 
   # # Indexed colors (для 256 цветов)
   # [colors.indexed]
-  #   text = "#e4e3d7"
-  #   background = "#bece7f"
+  #   text = "#e1e2e9"
+  #   background = "#a4c9fe"
   #
   # # ANSI цвета (для совместимости)
   # [colors.ansi]
-  #   black   = "#13140d"
+  #   black   = "#111318"
   #   red     = "#f38ba8"
   #   green   = "#a6e3a1"
   #   yellow  = "#f9e2af"
   #   blue    = "#89b4fa"
-  #   magenta = "#bece7f"
+  #   magenta = "#a4c9fe"
   #   cyan    = "#94e2d5"
-  #   white   = "#e4e3d7"
+  #   white   = "#e1e2e9"
   #
   # [colors.ansi_bright]
-  #   black   = "#1f2019"
+  #   black   = "#1d2024"
   #   red     = "#f38ba8"
   #   green   = "#a6e3a1"
   #   yellow  = "#f9e2af"
   #   blue    = "#89b4fa"
-  #   magenta = "#bece7f"
+  #   magenta = "#a4c9fe"
   #   cyan    = "#94e2d5"
-  #   white   = "#e4e3d788"
+  #   white   = "#e1e2e988"
   #
   # [colors.ansi_dim]
-  #   black   = "#0e0f08"
+  #   black   = "#0c0e13"
   #   red     = "#f38ba8"
   #   green   = "#a6e3a1"
   #   yellow  = "#f9e2af"
   #   blue    = "#89b4fa"
-  #   magenta = "#bece7f"
+  #   magenta = "#a4c9fe"
   #   cyan    = "#94e2d5"
-  #   white   = "#e4e3d788"
+  #   white   = "#e1e2e988"

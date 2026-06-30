@@ -1,9 +1,9 @@
-@define-color bg-window #13140d;
-@define-color bg-input #3f4c0a;
-@define-color text-default #e4e3d7;
-@define-color text-input #e4e3d7;
-@define-color bg-selected #bece7f;
-@define-color text-selected #2a3400;
+@define-color bg-window #111318;
+@define-color bg-input #204876;
+@define-color text-default #e1e2e9;
+@define-color text-input #e1e2e9;
+@define-color bg-selected #a4c9fe;
+@define-color text-selected #00315d;
 
 window {
   background-color: @bg-window;
